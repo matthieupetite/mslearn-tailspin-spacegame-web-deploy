@@ -116,10 +116,10 @@ stages:
     pool:
       vmImage: 'windows-2019'
     variables:
-    - group: 'Release'variables:
+    - group: 'Release'
     steps: 
     - task: UseDotNet@2
-      displayName: 'Use .NET Core SDK $(dotnetSdkVersion)'
+      displayName: 'Use .NET Core SDK 3.1.300'
       inputs:
         version: '3.1.300'
     - task: DotNetCoreCLI@2
